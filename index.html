@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="wrapper">
+      <main class="main">
+        <h1 class="title">Forms</h1>
+         <div class="form__container container ">
+            
+             <form id="form" class="form" action="#" method="post" enctype="multipart/form-data">
+                <div class="form-column">
+                  <div class="name">
+                     <p>Name</p>
+                      <input class="input input-name _req" placeholder="name*" tabindex="1" type="text" name="username">
+                  </div>
+                  <div class="password">
+                    <p>Password</p>
+                    <input class=" input input-password _req" tabindex="2" type="password" name="userpass" placeholder="password*">
+                  </div>
+                  <div class="phone">
+                    <p>Email</p>
+                    <input class="input input-phone input__email _req _email" tabindex="3" type="email" name="useremail" placeholder="email*">
+                  </div>
+                </div>
+                <div class="form-column">
+                    <div class="form-column__item radio">
+                       <p>Gender</p>
+                       <div>
+                        <input id="formGenderMale"  tabindex="4" class=" input-radio" checked  type="radio" name="usergender" value="male">
+                        <label  tabindex="4" for="formGenderMale" class="input-radio__label"><span>Male</span></label>
+                       </div>
+                       <div>
+                        <input id="formGenderFemale" tabindex="4" class=" input-radio"  type="radio" name="usergender" value="female">
+                        <label  tabindex="4" for="formGenderFemale" class="input-radio__label"><span>Female</span></label>
+                       </div>
+                    </div>
+                    <div class=" form-column__item checkbox">
+                          <p>Agreement*</p>
+                          
+                              <input  class="checkbox-input _req" id="formAgreement" tabindex="5" checked type="checkbox" name="agreement" value="yes">
+                              <label for="formAgreement" class="input-checkbox__label ">Do you agree?</label>
+                          
+                    
+                       
+                    </div>
+
+                    <div class="textarea-block">
+                          <label for="formMessage" class="textarea-label">Info</label>
+
+                          <textarea tabindex="6" class="textarea" name="_text" id="formMessage" cols="30" rows="5"></textarea>
+                    </div>
+                   
+                  </div>
+
+                  <div class="form-column">
+                     <div class="form-column__item file">
+                          <p>Add picture</p>
+                         <div class="file-input__body">
+                          <input id="formImage" accept=".jpg, .png, .gif" tabindex="7" class="input-file" type="file" name="image">
+                          <div id="formImage" class="file-button">Add picture</div>
+                        </div>
+                          <div id="formPreview" class="file-preview"></div>
+
+                     </div>
+                     <div class="form-column__item select">
+                         <p>Favorite color</p>
+                         <select class="input-select" tabindex="8"  name="color">
+                             <option class="option option-red" value="red">Red</option>
+                             <option selected class="option option-green" value="green">Green</option>
+                             <option class="option option-blue" value="blue">Blue</option>
+                         </select>
+                     </div>
+
+                     <div class="form-column__item actions">
+                        <p>Actions</p>
+                        <button  tabindex="9" class="button" type="submit">Send</button>
+                        <button  tabindex="10"  class="button" type="reset">Reset</button>
+                     </div>
+                   
+                  </div>
+
+                  <div>
+                    <canvas id="myChart"></canvas>
+                  </div>
+                 
+
+
+
+             </form>
+         </div>
+      </main>
+   </div>
+   
+    <script src="js/script.js" ></script>
+</body>
+</html>
